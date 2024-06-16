@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan Carlo - This is Me</title>
+  <link rel="stylesheet" href="dist/styles.css">
+  <style>
+    .transition {
+      transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    }
+    .hover\:transform:hover {
+      transform: scale(1.05);
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4 flex flex-wrap items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold">Ryan Carlo</a>
+      <div class="block lg:hidden">
+        <button aria-label="Toggle Menu" class="text-gray-700 hover:text-gray-900 focus:outline-none" onclick="toggleMenu()">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:items-center lg:w-auto" id="menu">
+        <div class="text-sm">
+          <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-900 mx-2 transition hover:transform focus:outline-none focus:ring-2 focus:ring-gray-900">Home</a>
+          <a href="journey.html" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-900 mx-2 transition hover:transform focus:outline-none focus:ring-2 focus:ring-gray-900">My Journey</a>
+          <a href="why-me.html" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-900 mx-2 transition hover:transform focus:outline-none focus:ring-2 focus:ring-gray-900">Why Me?</a>
+          <a href="hobbies.html" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-900 mx-2 transition hover:transform focus:outline-none focus:ring-2 focus:ring-gray-900">Hobbies</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Why Me Section -->
+  <section class="container mx-auto px-4 py-16">
+    <h1 class="text-4xl font-bold mb-8">Why Me?</h1>
+    <div class="space-y-8">
+      <!-- Strengths -->
+      <div class="bg-white p-6 shadow-md rounded-md">
+        <h2 class="text-2xl font-bold mb-4">Strengths</h2>
+        <p>Details about your strengths.</p>
+      </div>
+      <!-- Principles -->
+      <div class="bg-white p-6 shadow-md rounded-md">
+        <h2 class="text-2xl font-bold mb-4">Principles</h2>
+        <p>Details about your principles.</p>
+      </div>
+      <!-- Skills -->
+      <div class="bg-white p-6 shadow-md rounded-md">
+        <h2 class="text-2xl font-bold mb-4">Skills</h2>
+        <p>Details about your skills.</p>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="script.js"></script>
+</html>
